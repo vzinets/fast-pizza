@@ -1,0 +1,124 @@
+.item__article {
+  max-width: 480px;
+  display: flex;
+  gap: 12px;
+  position: relative;
+  padding: 12px;
+  background-color: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.item__image {
+  width: 100px;
+  height: 100px;
+}
+
+.item__label {
+  position: absolute;
+  color: var(--white);
+  text-align: center;
+  font-size: var(--text);
+  background-color: var(--red);
+  padding: 4px 9px;
+  border-radius: 0 6px 6px 0;
+  top: 8px;
+  left: 0;
+}
+
+.item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item__title {
+  font-size: var(--subtitle-text);
+  font-weight: var(--title-weight);
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Встановлення обмеження на 3 рядки */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Обрізає текст, який виходить за межі контейнера */
+  text-overflow: ellipsis;
+}
+
+.item__desc {
+  font-size: var(--text);
+  font-weight: var(--text-weight);
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Встановлення обмеження на 3 рядки */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Обрізає текст, який виходить за межі контейнера */
+  text-overflow: ellipsis; /* Додає "еліпсу" для показу обрізаного тексту */
+}
+
+.item__price_wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.item__price {
+  font-size: var(--subtitle-text);
+  font-weight: var(--title-weight);
+  color: var(--accent);
+  background-color: var(--light-primary);
+  padding: 7px 16px;
+  border-radius: 6px;
+}
+
+.item__old_price {
+  font-size: var(--subtitle-text);
+  font-weight: var(--text-weight);
+  color: var(--gray);
+  text-decoration: line-through;
+}
+
+.item__button {
+  cursor: pointer;
+  display: none;
+  border-radius: 6px;
+  background-color: var(--accent);
+  color: var(--white);
+  font-size: var(--text);
+  font-weight: var(--text-weight);
+  outline: none;
+  border: none;
+  width: 130px;
+  height: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .item__article {
+    cursor: pointer;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .item__select {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item__button {
+    display: block;
+  }
+
+  .item__price {
+    background-color: transparent;
+  }
+
+  .item__old_price {
+    display: none;
+  }
+}

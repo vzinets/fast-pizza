@@ -1,0 +1,118 @@
+.adress__wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--white);
+  margin-bottom: 32px;
+}
+
+.adress__input_wrapper {
+  height: 44px;
+}
+
+.adress_title {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+  font-size: var(--title-text);
+  font-weight: var(--title-weight);
+  align-self: center;
+}
+
+.adress__form {
+    width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.adress__label::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-image: url(../../static/icons/location.svg);
+  top: 12px;
+  left: 12px;
+}
+
+.adress__label {
+  flex-grow: 1;
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.adress__input {
+  border: none;
+  outline: none;
+  padding: 13px 0 13px 40px;
+  width: 100%;
+  font-size: var(--subtitle-text);
+}
+
+.adress__submit::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../static/icons/plane.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  display: block;
+  top: 15px;
+  right: 13px;
+}
+
+.adress__submit {
+  border: none;
+  outline: none;
+  min-width: 44px;
+  height: 44px;
+  font-size: 0;
+  color: var(--white);
+  border-radius: 6px;
+  background: var(--accent);
+}
+
+@media screen and (min-width: 992px) {
+  .adress_title {
+    width: 241px;
+  }
+
+  .adress__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
+  .adress__form {
+    max-width: 970px;
+  border: none;
+  gap: 20px;
+}
+
+
+.adress__label {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.adress__submit::before {
+  display: none;
+
+}
+
+.adress__submit {
+  min-width: 150px;
+  height: 44px;
+  font-size: var(--title-text);
+}
+}

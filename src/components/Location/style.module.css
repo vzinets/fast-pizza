@@ -1,0 +1,28 @@
+.location {
+    padding:9px 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--white);
+}
+
+.location__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location__city {
+  position: relative;
+  padding-left: 24px;
+}
+
+.location__city::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 20px;
+   width: 20px; 
+   background-image: url("../../static/icons/location.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+}

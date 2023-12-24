@@ -1,0 +1,34 @@
+.banners {
+    margin-bottom: 30px;
+}
+
+.banners__list {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.banners__item {
+    min-width: 280px;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.banners__link {
+    position: relative;
+}
+
+.banners__title {
+    color: var(--white);
+font-size: var(--banner-text);
+font-weight: var(--title-weight);
+line-height: 28px;
+position: absolute;
+width: 240px;
+bottom: 20px;
+right: 20px;
+}
+
+
+

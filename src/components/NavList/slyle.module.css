@@ -1,0 +1,54 @@
+.nav__wraper {
+    position: absolute;
+    left: -100vw;
+    top: 63px;
+    width: 100vw;
+    transition: all .3s linear;
+    background-color: var(--white);
+    z-index: 3;
+}
+
+.nav__active {
+   left: 0;
+
+}
+
+.nav__list {
+    padding: 20px  20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+
+.nav_item {
+    font-size: var(--title-text);
+    line-height: 20px;
+}
+
+
+
+.nav__login {
+    display: block;
+    position: relative;
+    padding: 22px 22px 22px 60px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.nav__login::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  width: 24px;
+  height: 20px;
+  background-image: url("../../static/icons/account.svg");
+  background-repeat: no-repeat;
+
+}
+
+
